@@ -3,8 +3,6 @@
 import matplotlib.pyplot as plt
 from data import df
 
-import matplotlib.pyplot as plt
-
 # Subset the data for plotting
 data_to_plot = df[
     [
