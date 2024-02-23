@@ -2,14 +2,10 @@
 
 import pandas as pd
 
-FILE_PATH = "./data/processed_data/WANG_ESRD_2020/genera.tsv"
+FILE_PATH = "./data/processed_data/ERAWIJANTARI_GASTRIC_CANCER_2020/genera.tsv"
 
 # Load data into a DataFrame
 df = pd.read_csv(FILE_PATH, sep="\t")
-
-# Assuming the first column in your data contains the sample names
-# Set the first column as the index
-df = df.set_index(df.columns[0])
 
 # Drop rows with missing values (if appropriate)
 df_clean = df.dropna()
