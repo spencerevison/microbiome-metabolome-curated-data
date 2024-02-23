@@ -8,6 +8,9 @@ import matplotlib.pyplot as plt
 # Import the DataFrame
 from data import df_clean as df
 
+# Set the first column as the index
+df = df.set_index(df.columns[0])
+
 # Create a new DataFrame with the conditions extracted
 conditions = df.index.to_series().apply(lambda x: x.split(".")[-1])
 
